@@ -17,6 +17,7 @@
         <li><a href="#">节目列表</a></li>
         <li><a href="#">关于我们</a></li>
         <li><a href="#">联系方式</a></li>
+        <li><a href="./login/index.html">进入后台</a></li>
       </ul>
     </nav>
   </header>
@@ -33,12 +34,12 @@
         </div>
     </section>
     <section class="controls">
-        <button class="prev-button" onclick="prevSlide()" onmouseover="showButtons()" onmouseout="hideButtons()">
-          <img src="./img/left.png" alt="Previous">
+        <button class="prev-button">
+            <img src="./img/left.png" alt="Previous" class="button-icon">
         </button>
-        <button class="next-button" onclick="nextSlide()" onmouseover="showButtons()" onmouseout="hideButtons()">
-          <img src="./img/right.png" alt="Next">
-        </button>
+        <button class="next-button">
+            <img src="./img/right.png" alt="Next" class="button-icon">
+        </button>          
     </section>
     <section class="intro">
       <h1>欢迎来到临沂二中广播站官网</h1>
@@ -49,6 +50,6 @@
   <footer>
     <p>&copy; 2023 临沂二中广播站. 所有权利保留。</p>
   </footer>
-  <script src="buttons.js" type="module"></script>
+  <script src="./buttons.js"></script>
 </body>
 </html>

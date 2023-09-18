@@ -31,10 +31,11 @@ document.addEventListener("DOMContentLoaded", function() {
       controls.classList.add("hidden");
     }
   
-    // 设置事件监听器来处理按钮的点击和鼠标事件
     document.querySelector(".prev-button").addEventListener("click", prevSlide);
     document.querySelector(".next-button").addEventListener("click", nextSlide);
-    document.querySelector(".slider").addEventListener("mouseover", showButtons);
-    document.querySelector(".slider").addEventListener("mouseout", hideButtons);
-  });
+    document.querySelector(".slider").addEventListener("mouseenter", showButtons);
+    document.querySelector(".slider").addEventListener("mouseleave", hideButtons);
   
+    // 初始设置
+    showSlide(0);
+});

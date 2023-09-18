@@ -36,7 +36,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1;
+    opacity: 0; /* 将初始 opacity 设置为 0 */
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -47,7 +47,7 @@ header {
 }
 
 .slide.active {
-    opacity: 1;
+    opacity: 1; /* 活动幻灯片的 opacity 设置为 1 */
 }
 
 /* 自动切换轮播图 */
@@ -73,6 +73,12 @@ header {
     position: relative;
     z-index: 1;
     margin-top: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.controls.hidden {
+    opacity: 1; /* 保持按钮隐藏 */
 }
 
 .prev-button,
